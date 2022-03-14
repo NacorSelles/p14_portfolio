@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <link href="style/css.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!---<header>
+        <img src="img/Logo nsb azul.svg" alt="">
+    </header>--->
+    <!---<div class="backgroundImage">--->
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <section id="cover">
+                <div id="textContainerCover">
+                    <h1 class="coverH1">Nacor<br>Selles</h1> 
+                    <h2 class="coverH2">2.º Gráfica <br>publicitaria <br>recursos <br>interactius<br> aplicats</h2>
+                    <h2 class="coverH2Flipped">Porfolio</h2> 
+                </div>
+                <div class="imageSwitcher">
+                    <div class="imageSwitcherButtons">
+                        <button class="imageSwitcherButton">1</button>
+                        <button class="imageSwitcherButton">2</button>
+                        <button class="imageSwitcherButton">3</button>
+                        <button class="imageSwitcherButton">4</button>
+                        <button class="imageSwitcherButton">5</button>
+                        <button class="imageSwitcherButton">6</button>
+                        <button class="imageSwitcherButton">7</button>
+                        <button class="imageSwitcherButton">8</button>
+                        <button class="imageSwitcherButton">9</button>
+                        <button class="imageSwitcherButton">10</button>
+                        <button class="imageSwitcherButton">11</button>
+                        <button class="imageSwitcherButton">12</button>
+                        <button class="imageSwitcherButton">13</button>
+                    </div>
+                    <div class="switcherImage">
+                        <img src="img/fondo3.jpg" alt="">
+                    </div>
+                    <script>
+                            $('.imageSwitcherButton').click(function(){
+                            if($(this).hasClass('active')){
+
+                            }
+                            else{
+                                images= ['<img src="img/p1t.jpg" alt="">','<img src="img/p2t.jpg" alt="">','<img src="img/p3t.jpg" alt="">','<img src="img/p4t.jpg" alt="">','<img src="img/p5t.jpg" alt="">','<img src="img/p6t.jpg" alt="">','<img src="img/p7t.jpg" alt="">','<img src="img/p8t.jpg" alt="">','<img src="img/p10t.jpg" alt="">','<img src="img/p11t.jpg" alt="">','<img src="img/p12t.jpg" alt="">','<img src="img/p13t.jpg" alt="">']
+                                $('.imageSwitcherButton').removeClass('active');
+                                $(this).addClass('active');
+                                var number=$(this).text();
+                                number = number-1;
+                                $('.switcherImage').empty().html(images[number]);
+                            }
+        });
+    </script>
+                </div>
+        </section>
+    </div>
+    <section id="nacor">
+        <div class="bar">
+            <p>Nacor Sellés Nacor Sellés Nacor Sellés Nacor Sellés Nacor Sellés Nacor Sellés</p>
+        </div>
+        <div id="fotoNacor">
+            <img src="img/logoNacor.svg" alt="">
+        </div>
+        <div class="bar">
+            <p>Nacor Sellés Nacor Sellés Nacor Sellés Nacor Sellés Nacor Sellés Nacor Sellés</p>
+        </div>
+    </section>
+    <main>
+        
+            <div class="image">
+                <div class="textImage">
+                    <h3>p1 Sitio web</h3>
+                    <p>Nuestra primera práctica del curso</p>
+                </div>
+                <a href="https://nacorselles.github.io/p1_llocweb/" class="image_container"><img src="img/p1t.jpg" alt=""></a>
+            </div>
+            <div class="image">
+                <div class="textImage">
+                    <h3>p2 Enlaces</h3>
+                    <p>Creamos diferentes páginas y las enlazamos entre ellas</p>
+                </div>
+                <a href="https://nacorselles.github.io/p2_enllacos/" class="image_container"><img src="img/p2t.jpg" alt=""></a>
+            </div>
+            <div class="image">
+                <div class="textImage">
+                    <h3>P3 IMAGEN, VÍDEO Y AUDIO</h3>
+                    <p>Aprendimos a poner imágenes, vídeos y audios en HTML</p>
+                </div>
+                <a href="https://nacorselles.github.io/p3_img_video_audio/" class="image_container"><img src="img/p3t.jpg" alt=""></a>
+            </div>
+            <div class="image">
+                <div class="textImage">
+                    <h3>P4 GALERÍA</h3>
+                    <p>Creamos la primera página de una web basados en un diseño hecho por nosotros en Adobe XD</p>
+                </div>
+                <a href="https://nacorselles.github.io/p4_gallery/p4_gallery/index.html" class="image_container"><img src="img/p4t.jpg" alt=""></a>
+            </div>
+        
+            <div class="image">
+                <div class="textImage">
+                    <h3>P5 CUADRÍCULA</h3>
+                    <p>Aprendimos a utilizar las guías y a hacer que un diseño sea responsive</p>
+                </div>
+                <a href="https://nacorselles.github.io/p5_grid/" class="image_container"><img src="img/p5t.jpg" alt=""></a>
+            </div>
+            <div class="image">
+                <div class="textImage">
+                    <h3>P6 SUPREMATISMO</h3>
+                    <p>En esta práctica creamos un cuadro “resposive” de Piet Mondrian con la ayuda de una cuadrícula </p>
+                </div>
+                <a href="https://nacorselles.github.io/p6_supretisme/p6_supretisme/index.html" class="image_container"><img src="img/p6t.jpg" alt=""></a>
+            </div>        
+            <div class="image">
+                <div class="textImage">
+                    <h3>P7 PORFOLIO</h3>
+                    <p>Creamos un porfolio que enlazaba las prácticas anteriores como entrega final del primer trimistre</p>
+                </div>
+                <a href="https://nacorselles.github.io/p7_Portfolio/" class="image_container"><img src="img/p7t.jpg" alt=""></a>
+            </div>
+            <div class="image">
+                <div class="textImage">
+                    <h3>P8 ANIMACIÓN</h3>
+                    <p>Configuramos mediante el CSS animaciones</p>
+                </div>
+                <a href="https://nacorselles.github.io/p8_animation/" class="image_container"><img src="img/p8t.jpg" alt=""></a>
+            </div> 
+            <div class="image">
+                <div class="textImage">
+                    <h3>P9 JS-SELECTOR</h3>
+                    <p>En esta actividad hice un juego sencillo e interactivo</p>
+                </div>
+                <a href="https://nacorselles.github.io/p9_js-selector/" class="image_container"><img src="img/p9t.jpg" alt=""></a>
+            </div>
+            <div class="image">
+                <div class="textImage">
+                    <h3>P10 JS-EVENTS</h3>
+                    <p>En esta actividad hicimos con java que cambiaran los colores dependiendo de donde está puesto el cursor</p>
+                </div>
+                <a href="https://nacorselles.github.io/p10_js-events/" class="image_container"><img src="img/p10t.jpg" alt=""></a>
+            </div>
+            <div class="image">
+                <div class="textImage">
+                    <h3>P11 JS-EFFECTS</h3>
+                    <p>Creamos cajas que se cierran y se abren</p>
+                </div>
+                <a href="https://nacorselles.github.io/p11_js-effects/" class="image_container"><img src="img/p11t.jpg" alt=""></a>
+            </div>
+            <div class="image">
+                <div class="textImage">
+                    <h3>P12 JS-GALLERY</h3>
+                    <p>Configuramos a partir de un ejemplo encontrado en internet, un slider con diferentes imágenes</p>
+                </div>
+                <a href="https://nacorselles.github.io/p12_js-gallery/" class="image_container"><img src="img/p12t.jpg" alt=""></a>
+            </div>
+            <div class="image">
+                <div class="textImage">
+                    <h3>P13 AVANTGUARDES</h3>
+                    <p>A partir de un referente creamos un diseño con una función de java</p>
+                </div>
+                <a href="https://nacorselles.github.io/p13_avantguardes/" class="image_container"><img src="img/p13t.jpg" alt=""></a>
+            </div>  
+    </main>
+    <section id="info">
+        <div class="bar">
+            <p>Nacor Sellés Nacor Sellés Nacor Sellés Nacor Sellés Nacor Sellés Nacor Sellés</p>
+        </div>
+    </section>
+    <footer>
+        <div class="textoInfo1">
+            <h3>SOBRE MÍ</h3>
+            <p>Soy Nacor alumno de la Escuela de Artes y Superior de Diseño de Alcoy. Soy Alcoyano de nacimiento y me apasiona la arquitectura, el diseño y viajar.</p>
+        </div>
+        <div class="textoInfo1">
+            <h3>MIS TRABAJOS</h3>
+            <p>Creamos un porfolio que enlazaba las prácticas anteriores como entrega final del primer trimistre</p>
+        </div>
+    </footer>
+</body>
+</html>
