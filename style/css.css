@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-style: none;
+    background: none;
+}
+h1, h2, h3, p, button{
+    color: #4700CE;
+}
+/*header*/
+/*section #cover*/
+/*div.backgroundImage{
+    background-image: url("img/fondo.jpg");  
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 20;
+}*/
+div#textContainerCover{
+    width: 50%;
+    height: auto;
+}
+h2.coverH2Flipped{
+    position: absolute;
+    font-size: 48px;
+    line-height: 90%;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    display:-moz-inline-stack;
+    display:inline-block;
+    zoom:1;
+    *display:inline; 
+    margin: -228px 0 0 -142px;
+}
+section#cover{
+    height: 750px;
+    width: auto;
+    padding: 100px 110px;
+    display: flex;
+}
+h1.coverH1{
+    font-size: 95px;
+    line-height: 83%;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+h2.coverH2{
+    font-size: 36px;
+    line-height: 95%;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 4px;
+}
+div.imageSwitcher{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+div.switcherImage{
+    position: absolute;
+    height: 550px;
+    margin-top: -10px;
+}
+div.switcherImage > img{
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+}
+div.switcherImage img{
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+    
+}
+div.imageSwitcherButtons{
+    position: absolute;
+    margin-right: 27.5%;
+    width: 10px;
+    z-index: 10;
+}
+button.imageSwitcherButton{
+    font-size: 38px;
+    line-height: 90%;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+h2.imageSwitcherText{
+    position: absolute;
+    margin: 15% 11% 0 0;
+    z-index: 10;
+    font-size: 38px;
+    line-height: 90%;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+}
+/*section #nacor*/
+div.bar p {
+    padding: 0 10px;
+    font-size: 208%;
+    line-height: 90%;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 22px 0px;
+}
+/*main*/
+div.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin-top: 90px;
+}
+div.row:last-child{
+    margin-bottom: 90px;
+}
+div.image{
+    display: flex;
+    justify-content: end;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 107px;
+    grid-row-gap: 65px;
+    grid-column-gap: 20px;
+    padding: 100px 0;
+}
+@media (max-width: 980px){
+    div.switcherImage {
+        position: unset;
+        height: 550px;
+        margin-top:unset;
+    }
+    div.imageSwitcher {
+        justify-content: center;
+        width: unset;
+        height: auto;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    div.imageSwitcherButtons {
+        position: absolute;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        margin-right: 0px!important;    
+        width: unset!important;
+    }
+    section#cover {
+        height: unset!important;
+        width: unset;
+        justify-content: center;
+        padding: 23px 111px;
+        display: flex;
+        flex-direction: column;
+        gap: 62px;
+    }
+}
+@media (max-width: 768px) and (min-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 46px;
+        grid-row-gap: 65px;
+    }
+    div.image img {
+        width: 250px;
+        height: 189px;
+    }
+}
+@media (max-width: 600px){
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: unset;
+        grid-row-gap: 65px;
+    }
+    div.image img {
+        width: 190px!important;
+        height: 140px!important;
+    }
+    div.image{
+        justify-content: center;
+    }
+}
+div.image img {
+    width: 250px;
+    height: 189px;
+}
+div.image img{
+    border: 1px solid #4700CE;
+}
+div.textImage{
+    margin-right: 20px;
+}
+div.textImage h3{
+    font-size: 24px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: right;
+}
+div.textImage p{
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    text-align: right;
+    padding-left: 40px;
+}
+.imageSwitcherButton{
+    cursor: pointer;
+}
+.imageSwitcherButton.active, .imageSwitcherButton:hover{
+    color: rgb(0, 0, 0)!important;
+}
+footer div p{
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    padding-left: 40px;
+}
+footer div h3{
+    padding-top: 10px;
+    font-size: 28px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    padding-left: 40px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    padding: 100px 0 150px 0;
+    justify-content: center;
+}
+.textoInfo1{
+    max-width: 40vw;
+    min-width: 40vw;
+}
+/*section #info*/
+/*footer*/
